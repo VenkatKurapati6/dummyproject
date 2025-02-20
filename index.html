@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delancey Tec</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="DT_LogoDesign.png" alt="Delancey Tec Logo">
+            <h1>Delancey Tec</h1>
+        </div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#services">Services</a>
+            <a href="#careers">Careers</a>
+            <a href="#contact">Contact Us</a>
+            <a href="#login">Employee Login</a>
+            <a href="#timesheet">Timesheet</a>
+        </nav>
+    </header>
+
+    <section id="home" class="section">
+        <h2>Welcome to Delancey Tec</h2>
+        <p>We specialize in ASIC, AI, Automotive, and 5G solutions.</p>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Us</h2>
+        <p>Delancey Tec is a leading technology company dedicated to innovation in ASIC development, artificial intelligence, automotive technology, and 5G solutions. Our mission is to drive progress and efficiency through cutting-edge technology and expert engineering. With a commitment to excellence, we deliver high-performance solutions tailored to industry needs.</p>
+    </section>
+
+    <section id="services" class="section">
+        <h2>Our Services</h2>
+        <p>The cost of design, manufacture, and testing of modern-day VLSI chips forces companies to innovate and create better designs that offer a competitive edge.</p>
+        <h3>Front-End Design</h3>
+        <ul>
+            <li>Digital Design</li>
+            <li>ASIC Design Services</li>
+            <li>Micro Architecture</li>
+            <li>RTL Development</li>
+            <li>Low Power Design Implementation and Checks</li>
+            <li>Bus Protocols like AMBA AXI, AHB, APB</li>
+            <li>SoC/Sub-system Integration</li>
+        </ul>
+        <h3>FPGA Design Services</h3>
+        <ul>
+            <li>FPGA System Architecture</li>
+            <li>Software-Hardware Partitioning</li>
+            <li>Custom IPs and HDL Development</li>
+            <li>Design Synthesis and Timing Closure</li>
+        </ul>
+        <h3>Digital Verification</h3>
+        <ul>
+            <li>Advanced IP & SoC Verification</li>
+            <li>SV-UVM Based Constrained-Random Verification</li>
+            <li>Low Power Verification – UPF/CPF</li>
+            <li>Gate Level Simulation</li>
+        </ul>
+        <h3>DFT Services</h3>
+        <ul>
+            <li>DFT Planning, Architecture, and Implementation</li>
+            <li>Test Pin-Muxing, SCAN Insertion, LBIST & MBIST</li>
+            <li>ATPG and Verification</li>
+            <li>DFT Simulations</li>
+        </ul>
+        <h3>Embedded Systems</h3>
+        <ul>
+            <li>Embedded solutions with advanced ARM cores</li>
+            <li>Linux Kernel & RTOS Development</li>
+            <li>Device Driver and Firmware Development</li>
+            <li>Porting Middleware for 64-bit Processors</li>
+        </ul>
+    </section>
+
+    <section id="careers" class="section">
+        <h2>Careers</h2>
+        <p>Join our team and be part of a company driving the future of ASIC, AI, Automotive, and 5G technology.</p>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <section id="login" class="section">
+        <h2>Employee Login</h2>
+        <form>
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+    
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter your password" required>
+    
+            <button type="submit">Login</button>
+        </form>
+    </section>
+    
+    <section id="timesheet" class="section">
+        <h2>Employee Time Sheet</h2>
+        <form action="thankyou.html" method="GET">
+            <label for="in-time">In Time:</label>
+            <input type="time" id="in-time" placeholder="Enter office-in time" required>
+    
+            <label for="out-time">Out Time:</label>
+            <input type="time" id="out-time" placeholder="Enter office-out time" required>
+    
+            <label for="total-hours">Total Hours:</label>
+            <input type="text" id="total-hours" placeholder="Enter total hours " required>
+    
+            <button type="submit">Submit</button>
+        </form>        
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Delancey Tec. All rights reserved.</p>
+    </footer>
+</body>
+</html>

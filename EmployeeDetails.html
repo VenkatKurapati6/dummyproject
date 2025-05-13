@@ -3,13 +3,30 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Delancey Tech</title>
-    <link rel="stylesheet" href="styles.css">
+    
 </head>
 
 <body>
-    <div id="header-container"></div>
+    <div class="head-container">
+        <i style="--clr:#1109ebed;"></i>
+        <i style="--clr:#00ff59;"></i>
+        <i style="--clr:#ff1d20;"></i>
+        <div class="login">
+            <h2>Login</h2>
+            <div class="boxInput">
+                <input type="text" placeholder="Username">
+            </div>
+            <div class="boxInput">
+                <input type="password" placeholder="Password">
+            </div>
+            <div class="boxInput">
+                <input type="submit" value="Sign in">
+            </div>
+        </div>
+    </div>
 
     <script>
         // Load the header dynamically
@@ -20,11 +37,11 @@
             })
             .catch(error => console.error("Error loading header:", error));
     </script>
-    
-
-    <footer>
-        <p>&copy; 2025 Delancey Tec. All rights reserved.</p>
-    </footer>
+    <div class="footer">
+        <footer>
+            <p>&copy; 2025 Delancey Tec. All rights reserved.</p>
+        </footer>
+    </div>
 </body>
 
 </html>

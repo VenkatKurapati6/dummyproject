@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delancey Tech</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="header-container"></div>
+    
+
+    <div class="home-container">
+    <section id="home" class="section"> <!--for home element-->
+        <h2>Welcome to Delancey Tec</h2>
+        <p>We specialize in ASIC, AI, Automotive, and 5G solutions.</p>
+    </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 Delancey Tec. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Load the header dynamically
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header-container").innerHTML = data;
+            })
+            .catch(error => console.error("Error loading header:", error));
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delancey Tech</title>
+    <link rel="stylesheet" href="styles.css">
+   
+</head>
+
+<body>
+    <div id="header-container"></div>
+
+<script>
+    // Load the header dynamically
+    fetch("header.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("header-container").innerHTML = data;
+        })
+        .catch(error => console.error("Error loading header:", error));
+</script>
+
+
+    <div class="srvices-container">
+        <section id="services" class="section">
+            <h2>Our Services</h2>
+            <p>The cost of design, manufacture, and testing of modern-day VLSI chips forces companies to innovate and create
+                better designs that offer a competitive edge.</p>
+
+            <h3>Front-End Design</h3>
+            <ul>
+                <li>Digital Design</li>
+                <li>ASIC Design Services</li>
+                <li>Micro Architecture</li>
+                <li>RTL Development</li>
+                <li>Low Power Design Implementation and Checks</li>
+                <li>Bus Protocols like AMBA AXI, AHB, APB</li>
+                <li>SoC/Sub-system Integration</li>
+            </ul>
+
+            <h3>FPGA Design Services</h3>
+            <ul>
+                <li>FPGA System Architecture</li>
+                <li>Software-Hardware Partitioning</li>
+                <li>Custom IPs and HDL Development</li>
+                <li>Design Synthesis and Timing Closure</li>
+            </ul>
+
+            <h3>Digital Verification</h3>
+            <ul>
+                <li>Advanced IP & SoC Verification</li>
+                <li>SV-UVM Based Constrained-Random Verification</li>
+                <li>Low Power Verification – UPF/CPF</li>
+                <li>Gate Level Simulation</li>
+            </ul>
+
+            <h3>DFT Services</h3>
+            <ul>
+                <li>DFT Planning, Architecture, and Implementation</li>
+                <li>Test Pin-Muxing, SCAN Insertion, LBIST & MBIST</li>
+                <li>ATPG and Verification</li>
+                <li>DFT Simulations</li>
+            </ul>
+
+            <h3>Embedded Systems</h3>
+            <ul>
+                <li>Embedded solutions with advanced ARM cores</li>
+                <li>Linux Kernel & RTOS Development</li>
+                <li>Device Driver and Firmware Development</li>
+                <li>Porting Middleware for 64-bit Processors</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Delancey Tec. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

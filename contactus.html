@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delancey Tech</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #090909;
+        }
+
+        .section {
+            background-color: #090909;
+            color: rgb(255, 251, 251);
+        }
+
+        header{
+            background-color: #090909;
+            color: #fdfbfb;
+        }
+        .glow-on-hover {
+            width: 220px;
+            height: 50px;
+            border: none;
+            outline: none;
+            color: #161616;
+            background: #090909;
+            cursor: pointer;
+            position: relative;
+            z-index: 0;
+            border-radius: 10px;
+        }
+        footer{
+            background-color: #090909;
+        }
+
+        .glow-on-hover:before {
+            content: '';
+            background: linear-gradient(90deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            background-size: 400%;
+            z-index: -1;
+            filter: blur(5px);
+            width: calc(100% + 10px);
+            height: calc(100% + 10px);
+            animation: glowing 20s linear infinite;
+            opacity: 0;
+            transition: opacity .3s ease-in-out;
+            border-radius: 10px;
+        }
+
+        .glow-on-hover:active {
+            color: #fef9f9
+        }
+
+        .glow-on-hover:active:after {
+            background: transparent;
+        }
+
+        .glow-on-hover:hover:before {
+            opacity: 1;
+        }
+
+        .glow-on-hover:after {
+            z-index: -1;
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #fdfbfb;
+            color: black;
+            left: 0;
+            top: 0;
+            border-radius: 10px;
+        }
+
+        @keyframes glowing {
+            0% {
+                background-position: 0 0;
+            }
+
+            50% {
+                background-position: 400% 0;
+            }
+
+            100% {
+                background-position: 0 0;
+            }
+        }
+    </style>/*
+</head>
+
+<body>
+    <div id="header-container"></div>
+
+    <script>
+        // Load the header dynamically
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header-container").innerHTML = data;
+            })
+            .catch(error => console.error("Error loading header:", error));
+    </script>
+
+    <div id="contactus" class="contactus-container">
+
+        <section id="contact" class="section">
+            <h2>Contact Us</h2> <!--for contacting element-->
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button class="glow-on-hover" type="button">Submit</button>
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 Delancey Tec. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

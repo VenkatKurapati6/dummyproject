@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delancey Tech</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="header-container"></div>
+
+<script>
+    // Load the header dynamically
+    fetch("header.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("header-container").innerHTML = data;
+        })
+        .catch(error => console.error("Error loading header:", error));
+</script>
+
+
+
+    <div class="aboutus-container">
+          <h2>About Us</h2> <!--for about element-->
+            <p>Delancey Tec is a leading technology company dedicated to innovation in ASIC development, artificial
+                intelligence, automotive technology, and 5G solutions. Our mission is to drive progress and efficiency
+                through cutting-edge technology and expert engineering. With a commitment to excellence, we deliver
+                high-performance solutions tailored to industry needs.</p>
+               
+    </div>
+        
+
+<footer>
+    <p>&copy; 2025 Delancey Tec. All rights reserved.</p>
+</footer>
+</body>
+
+</html>

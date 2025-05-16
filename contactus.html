@@ -11,7 +11,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Codystar:wght@300;400&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:i,bi,700,300,400&display=swap">
-    <style>      
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Codystar:wght@300;400&display=swap');
+
+        /* Reset and General Styles */
         * {
             margin: 0;
             padding: 0;
@@ -42,8 +45,11 @@
         .section {
             display: flex;
             flex-direction: column;
+
             text-align: left;
             padding: 20px;
+            scroll-snap-align: start;
+            /* Snap to the top of each section */
         }
 
 
@@ -345,9 +351,6 @@
             color: #fff;
         }
 
-        button[type="submit"]:hover:before {
-            left: 125%;
-        }
 
         button[type="submit"]:active {
             background: linear-gradient(to bottom, #2a2a2a, #383838);
@@ -363,6 +366,7 @@
             font-style: italic;
         }
 
+        
         /* Responsive Design Adjustments */
         @media (max-width: 992px) {
             .welcome-text {
@@ -439,15 +443,17 @@
             }
         }
 
-        .footer {
+       .footer {
+          
             color: #ffffff;
             padding: 20px 0;
             text-align: center;
             z-index: 10; 
             max-width: 1200px;
-            margin: 0 auto; 
+            margin: 0 auto;
             padding: 0 20px;
         }
+
     </style>
 </head>
 
@@ -527,11 +533,11 @@
         </div>
         <div class="footer">
             <footer>
-                <p>&copy;2025 Delancet Tec. All rights reserved.</p>
+                <p>&copy; 2025 Delancey Tec. All rights reserved.</p>
             </footer>
         </div>
     </div>
-
+    
     <script>
         fetch("header.html")
             .then(response => response.text())

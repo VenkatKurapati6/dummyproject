@@ -445,3 +445,136 @@
         }
     </style>
 </head>
+    
+<body>
+
+    <section class="section section-light-bg">
+        <div id="navbar-container"></div>
+        <div class="section-container">
+            <div class="section-content-left">
+                <h2 class="load-page">Advance Your Career, Your Way....</h2>
+                <p class="h2-below-text">
+                    We believe great ideas start with strong partnerships.That’s why we focus on cultivating trust,
+                    transparency, and collaboration—helping both our clients
+                    and our team thrive in every challenge and opportunity.
+                </p>
+            </div>
+            <div class="section-content-right section-image">
+                <img src="/images/6671.jpg" alt="Illustration of person on bench">
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-gray-bg">
+        <div class="section-container">
+            <div class="section-content-left">
+                <h2 class="load-after-page">A Growing Company....</h2>
+                <p class="h2-below-text">
+                    We’re here to help you grow not just in your role, but in your career. With hands-on learning,
+                    mentorship, and meaningful projects, your development is in your hands and we’ve got your back."
+                </p>
+                <p class="p-below-text ">
+                    Do your best work. Become your best self
+                </p>
+            </div>
+            <div class="section-content-right section-boxes-container">
+                <div class="feature-box curious">
+                    <h3>Stay Curious</h3>
+                    <p>Ask questions, explore the unfamiliar, and never stop learning — it's how we grow.</p>
+                </div>
+                <div class="feature-box adaptability">
+                    <h3>Adaptability</h3>
+                    <p>Change is constant — roll with it, stay curious, and keep building something great.</p>
+                </div>
+                <div class="feature-box reflection">
+                    <h3>Reflection</h3>
+                    <p>Pause to look back, learn from what worked (and didn’t), then move forward with purpose.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-center" style="padding: 20px; color: #ccc;">
+        <h2>Open Positions</h2>
+        <hr>
+        <p>
+            We believe great people build great things. Think you’re a fit?<br> See our openings and apply now.
+        </p>
+    </section>
+
+    <div class="job-card">
+        <h3>ASIC DESIGN & VERIFICATION ENGINEER</h3>
+        <p>
+            <strong>SKILLS:</strong>
+            3+ to 5+ Years VLSI Design & Verification Engineer Candidates in Verification with B.E/B.Tech/M.E/M.Tech.
+            - Verilog/System Verilog/UVM/OVM
+            - Python, Perl, Shell, TCL
+            - Protocols: Ethernet, PCIe, USB, SATA, NVMe, AMBA, ARM, RISC CPUs
+            - Functional coverage modelling, code coverage analysis
+            - GLS is an advantage
+            - Communication skills, team collaboration
+        </p>
+        <div class="job-meta">
+            <span>
+                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
+                    fill="#000000">
+                    <path
+                        d="M144-96v-504h192v-72l144-144 144 144v216h192v360H144Zm72-72h72v-72h-72v72Zm0-144h72v-72h-72v72Zm0-144h72v-72h-72v72Zm228 288h72v-72h-72v72Zm0-144h72v-72h-72v72Zm0-144h72v-72h-72v72Zm0-144h72v-72h-72v72Zm228 432h72v-72h-72v72Zm0-144h72v-72h-72v72Z" />
+                </svg>
+                Bangalore
+            </span>
+            <span>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="#000000">
+                    <path
+                        d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z" />
+                </svg> Full Time
+            </span>
+        </div>
+        <button class="apply-button">APPLY</button>
+    </div>
+
+    <div class="application-form">
+        <h2>Apply</h2>
+        <form class="form-grid">
+            <div class="form-group">
+                <label for="fullname">FULL NAME *</label>
+                <input type="text" id="fullname" placeholder="Full name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">EMAIL ADDRESS *</label>
+                <input type="email" id="email" placeholder="Email Address" required>
+            </div>
+            <div class="form-group">
+                <label for="contact">CONTACT *</label>
+                <input type="text" id="contact" placeholder="Contact" required>
+            </div>
+            <div class="form-group">
+                <label for="role">ROLE *</label>
+                <input type="text" id="role" placeholder="Role applying for" required>
+            </div>
+            <div class="form-group full">
+                <label for="message">FEW WORDS</label>
+                <textarea id="message" rows="3" placeholder="How'd you hear about us? Max – 500"></textarea>
+            </div>
+            <div class="form-group full">
+                <label for="resume">UPLOAD RESUME *</label>
+                <input type="file" id="resume" required>
+            </div>
+            <div class="form-group full">
+                <button class="submit-btn">APPLY NOW</button>
+            </div>
+        </form>
+</div>
+<script>
+    // Load the header dynamically
+    fetch("header.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("navbar-container").innerHTML = data;
+        })
+        .catch(error => console.error("Error loading header:", error));
+</script>
+</body>
+
+</html>

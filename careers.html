@@ -232,3 +232,120 @@
             color: #333;
             white-space: pre-line;
         }
+
+        
+        .job-meta {
+            font-family: "Comic Relief", system-ui;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-top: 20px;
+            color: #007BFF;
+            font-size: 1rem;
+        }
+
+        .job-meta span {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .job-meta svg {
+            display: block;
+        }
+
+        .apply-button {
+            position: absolute;
+            right: 40px;
+            top: 40px;
+            background-color: #0db9a6;
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            font-weight: 700;
+            border-radius: 6px;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .apply-button:hover {
+            background-color: #0aa593;
+        }
+
+        .application-form {
+            background-color: #e3f4ff;
+            padding: 40px 20px;
+            margin-bottom: 40px;
+            border-radius: 12px;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
+        .application-form h2 {
+            font-family: "Share Tech", sans-serif;
+            margin-bottom: 30px;
+            font-size: 1.5rem;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            font-family: "Share Tech", sans-serif;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group label {
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-group.full {
+            grid-column: span 2;
+        }
+
+        .form-group input[type="file"] {
+            border: none;
+            padding: 0;
+        }
+
+        .submit-btn {
+            margin-top: 30px;
+            background-color: #0aaaf0;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-weight: 700;
+            border-radius: 6px;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .submit-btn:hover {
+            background-color: #099ed7;
+        }
+
+        @media (max-width: 768px) {
+
+            .section-container,
+            .section-content-left,
+            .section-content-right,
+            .section-boxes-container {
+                flex-direction: column;
+                padding: 10px;
+            }

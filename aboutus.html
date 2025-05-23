@@ -347,3 +347,157 @@
         .broadcom-svg {
             transform: translateX(-400px);
         }
+
+        
+        .tessolve-svg {
+            transform: translateX(-200px);
+        }
+
+        .texasInstruments-svg {
+            transform: translateX(0px);
+        }
+
+        .amd-svg {
+            transform: translateX(200px);
+        }
+
+        .arm-svg {
+            transform: translateX(400px);
+        }
+
+        .autoBlur {
+            animation: autoBlurAnimation linear both;
+            animation-timeline: view();
+        }
+
+
+        .footer {
+            color: #000000;
+            padding: 20px 0;
+            text-align: center;
+            z-index: 10;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        @keyframes autoBlurAnimation {
+            0% {
+                filter: blur(20px);
+            }
+
+            45%,
+            55% {
+                filter: blur(0px);
+            }
+
+            100% {
+                filter: blur(20px);
+            }
+
+        }
+
+
+
+        @media (max-width: 900px) {
+            .history-bg-text {
+                font-size: 120px;
+            }
+
+            .timeline-details h3 {
+                font-size: 20px;
+            }
+
+            .timeline-details p {
+                font-size: 14px;
+            }
+
+            .milestone.active {
+                font-size: 16px;
+            }
+
+            .milestone {
+                font-size: 11px;
+            }
+
+            .section-title {
+                font-size: 26px;
+            }
+
+            .history-bg-text {
+                font-size: 150px;
+            }
+
+            .timeline-section,
+            .values-and-goals-section,
+            .clients-section {
+                padding: 30px 15px;
+            }
+
+            .amd-svg,
+            .arm-svg,
+            .broadcom-svg,
+            .tessolve-svg,
+            .texasInstruments-svg {
+                transform: translateX(0%);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .values-container {
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            .vertical-line-container {
+                height: 200px;
+            }
+
+            .values-image img {
+                width: 150px;
+            }
+
+           
+            .values-and-goals-section {
+                border-top-left-radius: 400px;
+                border-top-right-radius: 400px;
+                height: auto;
+                min-height: 100vh;
+                padding-top: 80px;
+
+            }
+
+            .values-container {
+                flex-direction: column;
+                height: auto;
+            }
+
+            .section-values-h2 {
+                position: static;
+                text-align: center;
+                font-size: 24px;
+                color: #fff;
+            }
+
+            .values-text {
+                align-items: center;
+                text-align: center;
+                width: 90%;
+            }
+
+            .value-item {
+                font-size: 18px;
+                text-align: center;
+            }
+
+            .value-item.active {
+                font-size: 24px;
+            }
+
+            .vertical-line-container {
+                height: 0px;
+               
+            }
+            .dot-vertical{
+                height: 0px;
+            }

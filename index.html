@@ -801,3 +801,124 @@
             .company-provides-text-details {
                 margin-top: 2rem;
             }
+
+            .company-provides-text-details .section.row h1,
+            .section.row-reverse h1 {
+                font-size: 3rem;
+            }
+
+            .company-provides-text-details .section.row h3,
+            .section.row-reverse h3 {
+                font-size: 15px;
+            }
+
+            .company-provides-text-details .section.row p,
+            .section.row-reverse p {
+                font-size: 20px;
+                padding-top: 5px;
+            }
+
+            .svg {
+                white-space: nowrap;
+                will-change: transform;
+                animation: clients-svg 30s linear infinite;
+                padding: 0 1rem;
+            }
+        }
+
+        @media (max-width:650px) {
+
+            .section-label {
+                font-size: 15px;
+            }
+
+            .section-label-bottom {
+                font-size: 15px;
+            }
+
+            .company-title .wrapper {
+                margin: 0;
+            }
+
+
+            .wrapper .static-txt {
+                font-size: 0px;
+
+            }
+
+            .dynamic-txt li {
+                font-size: 0px;
+                list-style: none;
+                position: relative;
+                top: 0;
+                animation: none;
+            }
+
+
+            .dynamic-txt li::after {
+                left: 0;
+                content: "";
+                position: absolute;
+                width: 0%;
+                height: 0%;
+                background-color: rgb(249, 241, 241);
+                animation: none;
+            }
+
+            .image-block {
+                padding: 20px;
+            }
+
+            .company-provides .gallery .image-hover h1 {
+                font-size: 1.5rem;
+                margin-bottom: 0;
+            }
+        }
+
+        @media (max-width:450px) {
+            .section-label {
+                font-size: 20px;
+                top: 10%;
+                left: 25%;
+                color: #000000;
+            }
+
+            .section-label-bottom-left {
+                font-size: 15px;
+                bottom: 10%;
+                left: 35%;
+                color: #000000;
+            }
+
+            .section-label-bottom {
+                font-size: 20px;
+            }
+
+            .company-provides .gallery .image-hover h1 {
+                font-size: 1.5rem;
+                margin: 5rem 0 2rem 0;
+            }
+
+            .company-provides .gallery {
+                padding: 15rem 0 3rem 0;
+            }
+
+            .company-provides-text-details .section.row p,
+            .section.row-reverse p {
+                font-size: 15px;
+                padding-top: 5px;
+            }
+
+            .technologies-used h3 {
+                font-family: "Tagesschrift", sans-serif;
+                font-weight: 400;
+                padding: 2rem 0;
+            }
+
+            .technologies-used .button {
+                color: #FFFFFF;
+                font-size: 35px;
+            }
+        }
+    </style>
+</head>

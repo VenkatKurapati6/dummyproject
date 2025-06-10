@@ -504,3 +504,108 @@
             filter: blur(1rem);
             opacity: 0.125;
         }
+
+        .glowing-border.right::before {
+            transform-origin: left;
+        }
+
+        .glowing-border.right {
+            margin-inline-start: auto;
+            border-radius: 100vw 0 0 100vw;
+            border: 3px solid transparent;
+            border-right: 0;
+        }
+
+        .image-block {
+            flex: 1;
+            padding-left: 30px;
+            padding-right: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+        }
+
+        .image-block img {
+            max-width: 70%;
+            height: 70%;
+            border-radius: 0.75rem;
+            display: block;
+        }
+
+        @media (min-width: 768px) {
+            .section.row {
+                flex-direction: row;
+                align-items: stretch;
+            }
+
+            .section.row-reverse {
+                flex-direction: row-reverse;
+                align-items: stretch;
+            }
+        }
+
+        .section h1,
+        p,
+        h3 {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .section h1 {
+            font-family: "bebas neue";
+            font-size: 75px;
+        }
+
+        .section p {
+            font-family: "dancing script";
+            font-size: 25px;
+        }
+
+        .section h3 {
+            font-family: "Orbitron";
+
+        }
+
+        .clients-info {
+            scroll-snap-align: start;
+            margin: 0%;
+            padding: 30px 0 0 0;
+            height: auto;
+        }
+
+        .track-horizontal {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+        }
+
+        .clients-text-container {
+            display: flex;
+            width: fit-content;
+        }
+
+        .svg {
+            white-space: nowrap;
+            will-change: transform;
+            animation: clients-svg 60s linear infinite;
+            padding: 0 1rem;
+        }
+
+        @keyframes clients-svg {
+            0% {
+                transform: translateX(-100%);
+            }
+
+            100% {
+                transform: translateX(0%);
+            }
+        }
+
+        .svg img {
+            height: 150px;
+            width: 240px;
+            gap: 10px;
+            object-fit: contain;
+            user-select: none;
+        }

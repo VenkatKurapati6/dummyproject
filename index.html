@@ -1175,3 +1175,33 @@
                     </div>
                 </div>
             </div>
+
+            <div class="technologies-used">
+                <h1>Innovation at Your Fingertips... </h1>
+                <h3>Drop a message, Lets discuss how we can help your business growww.... </h3>
+                <button class="button">
+                    <a href="mailto:hr@delanceytech.com" style="text-decoration: none; color: inherit;">Contact
+                        Us</a>
+                </button>
+
+            </div>
+            <div class="footer">
+            <footer>
+                <p>&copy; 2025 Delancey Tec. All rights reserved.</p>
+            </footer>
+        </div>
+        </div>
+       
+    </div>
+
+    <script>
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header-container").innerHTML = data;
+            })
+            .catch(error => console.error("Error loading header:", error));
+            </script>
+</body>
+
+</html>

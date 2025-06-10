@@ -609,3 +609,93 @@
             object-fit: contain;
             user-select: none;
         }
+
+        
+        .clients-info-heading h1 {
+            color: rgb(36, 94, 94);
+            text-align: center;
+            font-size: 75px;
+            margin: 0;
+            padding: 0 0 10px 0;
+            font-family: "Caveat", system-ui, sans-serif;
+
+        }
+
+        .technologies-used {
+            scroll-snap-align: start;
+            background: #000000;
+            margin: 5% 0 5% 0;
+            border-radius: 100px;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .technologies-used h1 {
+            font-size: 50px;
+            margin: 0%;
+            padding-top: 10px;
+            
+            font-weight: 400;
+            font-family: "Tagesschrift", system-ui;
+        }
+
+        .technologies-used h3 {
+            font-family: "Tagesschrift", sans-serif;
+            font-weight: 400;
+        }
+
+        .technologies-used .button {
+            background-color: #000000;
+            font-family: 'Courier New', Courier, monospace;
+            border: none;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 30px;
+            padding: 10px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        .technologies-used .button a {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        .technologies-used .button a:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+        .technologies-used .button:hover a {
+            padding-right: 25px;
+
+        }
+
+        .technologies-used .button:hover a:after {
+            opacity: 1;
+            right: 0;
+        }
+
+        .footer {
+            scroll-snap-align: start;
+            color: #000000;
+            padding: 20px 0;
+            text-align: center;
+            z-index: 10;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        @media (max-width:990) {
+            .wrapper {
+                margin: 0;
+            }
+        }

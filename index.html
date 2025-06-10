@@ -201,3 +201,104 @@
             animation: rotateX360 0.8s ease-in-out forwards;
             animation-delay: 0.9s;
         }
+
+        
+        .path-24 {
+            animation: rotateX360 0.8s ease-in-out forwards;
+            animation-delay: 0.9s;
+        }
+
+        .path-25 {
+            animation: rotateX360 0.8s ease-in-out forwards;
+            animation-delay: 0.9s;
+        }
+
+        .company-provides {
+
+            background-color: #ffffff;
+            position: relative;
+            color: #000000;
+            padding: 0%;
+            height: 100vh;
+            width: 100vw;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .section-label {
+            color: #FFFFFF;
+            position: absolute;
+            top: 40px;
+            left: 40px;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        .wrapper {
+            position: absolute;
+            top: 75%;
+            left: 30%;
+            padding: 0%;
+            margin: 0 0 0 5%;
+            display: flex;
+            box-sizing: border-box;
+        }
+
+        .wrapper .static-txt {
+            font-family: "Nunito Sans", sans-serif;
+            color: #000000;
+            font-size: 30px;
+            font-weight: 700;
+        }
+
+        .wrapper .dynamic-txt {
+            margin: .5% 0 0 0;
+            padding: 0%;
+            margin-left: 10px;
+            height: 40px;
+            overflow: hidden;
+        }
+
+        .dynamic-txt li {
+            font-family: Savate;
+            color: tomato;
+            list-style: none;
+            text-align: left;
+            font-size: 30px;
+            font-weight: 700;
+            position: relative;
+            top: 0;
+            animation: slide 8s steps(4) infinite;
+        }
+
+        @keyframes slide {
+            100% {
+                top: -140px;
+            }
+        }
+
+        .dynamic-txt li::after {
+            left: 0;
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(249, 241, 241);
+            border-left: 5px solid #000000;
+            animation: typing 2s steps(12) infinite;
+        }
+
+        @keyframes typing {
+
+            40%,
+            50% {
+                left: calc(100% + 30px);
+            }
+
+            100% {
+                left: 0;
+            }
+        }

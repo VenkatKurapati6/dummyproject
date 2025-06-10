@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
+    <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -67,7 +68,7 @@
             font-style: normal;
             font-weight: 900;
             line-height: 1.2;
-            padding:0px 0px 0px 40px;
+            padding: 0px 0px 0px 40px;
         }
 
         h2 {
@@ -102,7 +103,7 @@
             color: #b0b0b0;
             font-size: 1.2rem;
             font-weight: 400;
-            padding: 0px 20px 0px 0px ;
+            padding: 0px 20px 0px 0px;
             line-height: 1.6;
         }
 
@@ -359,7 +360,7 @@
             font-style: italic;
         }
 
-        
+
         /* Responsive Design Adjustments */
         @media (max-width: 992px) {
             .welcome-text {
@@ -408,11 +409,11 @@
                 font-size: 1.8em;
             }
 
-            .section h6{
-                 padding: 0px ;
+            .section h6 {
+                padding: 0px;
             }
 
-            .star-icon-container{
+            .star-icon-container {
                 padding: 0px;
             }
 
@@ -444,25 +445,35 @@
             }
         }
 
-       .footer {
-          
+        .address {
+            padding-left: 20px;
+            height: 200px;
+            width: 500px;
+        }
+
+        .map-and-address {
+            display: flex;
+            padding: 10px;
+            height: 150px;
+        }
+
+        .footer {
             color: #ffffff;
             padding: 20px 0;
             text-align: center;
-            z-index: 10; 
+            z-index: 10;
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
         }
-
     </style>
 </head>
 
 <body>
     <div class="main-container">
         <div class="section">
-            <div id="navbar-container"></div>
-            <div class="header-container" id="header-container">
+            <div id="navbar-container">
+                <div class="header-container" id="header-container"></div>
                 <h2 class="welcome-text">Let’s Work Together.....</h2>
                 <div class="star-icon-container">
                     <img src="https://cdn.prod.website-files.com/670bf3be6040f597f238f1be/671928d79cffba5b25ff7476_star-grey.svg"
@@ -477,6 +488,8 @@
                 <div class="marquee-text-container" id="marqueeContainer">
                     <div class="marquee-text" id="marqueeContent">
                         HELLO &nbsp नमस्ते &nbsp ನಮಸ್ಕಾರ &nbsp నమస్కారం &nbsp வணக்கம்&nbsp ہیلو&nbsp HOLA &nbsp HELLO
+                        &nbsp प्रणाम &nbsp ꯍꯦꯜꯂꯣ &nbsp నమస్కారం &nbsp வணக்கம்&nbsp CIAO&nbsp HOLA&nbsp HELLO &nbsp
+                        नमस्ते &nbsp ನಮಸ್ಕಾರ &nbsp నమస్కారం &nbsp வணக்கம்&nbsp ہیلو&nbsp HOLA &nbsp HELLO
                         &nbsp प्रणाम &nbsp ꯍꯦꯜꯂꯣ &nbsp నమస్కారం &nbsp வணக்கம்&nbsp CIAO&nbsp HOLA &nbsp;
                     </div>
                 </div>
@@ -488,15 +501,28 @@
                 <div class="contact-info">
                     <h1>Send Mail Here</h1>
                     <p>Got questions or ready to start something amazing?</p>
-                    <p>Drop us a message or <a href="https://calendar.app.google/WLSCQpo9DCT6xish6">book a video call here</a> to discuss your ideas. We're here
+                    <p>Drop us a message or <a href="https://calendar.app.google/WLSCQpo9DCT6xish6">book a video call
+                            here</a> to discuss your ideas. We're here
                         to help bring your vision to life, and we'd love to connect with you!</p>
                     <div class="info-item">
                         <i class="fas fa-envelope"></i>
-                        <a href="mailto:venkata.kg@delanceytech.com">venkata.kg@delanceytech.com</a>
+                        <a href="mailto:hr@delanceytech.com">hr@delanceytech.com</a>
                     </div>
                     <div class="info-item">
                         <i class="fas fa-phone-alt"></i>
-                        <a href="tel:+91 4836 3642 36">+91 4836 3642 36</a>
+                        <a href="tel:+91 4836 3642 36">+91 6336 3642 36</a>
+                    </div>
+                    <div class="map-and-address">
+                        <div class="map-container">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.8919558544794!2d77.58301907358792!3d12.914665216126968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae150cb7c1e5a5%3A0x2e4ddc9ae3a005a!2sGolden%20Square%20JP%20Nagar!5e0!3m2!1sen!2sin!4v1747822962641!5m2!1sen!2sin"
+                                width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="address">Delancey Technologies PVT LTD
+                            1101 Golden Square Business Centre,
+                            24th Main, J P Nagar 1st Phase,
+                            Bangalore, Karnataka, India, 560078</div>
                     </div>
                 </div>
 
@@ -532,12 +558,12 @@
             </footer>
         </div>
     </div>
-    
+
     <script>
         fetch("header.html")
             .then(response => response.text())
             .then(data => {
-                document.getElementById("navbar-container").innerHTML = data;
+                document.getElementById("header-container").innerHTML = data;
             })
             .catch(error => console.error("Error loading header:", error));
 

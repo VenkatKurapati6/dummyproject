@@ -12,7 +12,6 @@
         href="https://fonts.googleapis.com/css2?family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&family=Ancizar+Sans:ital,wght@1,100..1000&family=Bebas+Neue&family=Caveat:wght@400..700&family=Codystar:wght@300;400&family=Comic+Relief:wght@400;700&family=Coral+Pixels&family=Dancing+Script:wght@400..700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Freehand&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Dives+Akuru&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Orbitron:wght@400..900&family=Poetsen+One&family=Share+Tech&family=Tagesschrift&family=Underdog&display=swap"
         rel="stylesheet">
     <style>
-       
         html,
         body {
             height: 100%;
@@ -79,7 +78,7 @@
         }
 
         .box span i:nth-child(2) {
-            color: #fff701;
+            color: #ffffff;
         }
 
         @keyframes animate {
@@ -117,6 +116,7 @@
             height: 100vh;
             background-color: #000000;
         }
+
 
         .scroll-wrapper {
             height: 100vh;
@@ -1011,7 +1011,8 @@
 </head>
 
 <body>
-     <div class="splash-screen" id="splash">
+
+    <div class="splash-screen" id="splash">
         <div class="box">
             <!-- 16 Rotating Spans -->
             <span style="--i: 1"><i>DELANCEY</i><i>TECHNOLOGIES</i></span>
@@ -1305,13 +1306,13 @@
        
     </div>
 
-   <script>
-            fetch("nav2.html")
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById("header-container").innerHTML = data;
-                })
-                .catch(error => console.error("Error loading header:", error));
+    <script>
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header-container").innerHTML = data;
+            })
+            .catch(error => console.error("Error loading header:", error));
 
             function hideSplash() {
                 const splash = document.getElementById('splash');
@@ -1330,8 +1331,7 @@
             }
 
             const splashTimer = setTimeout(hideSplash, 9000);
-
-        </script>
+            </script>
 </body>
 
 </html>

@@ -7,110 +7,17 @@
     <title>Home@Delancey</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css">
-
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&family=Ancizar+Sans:ital,wght@1,100..1000&family=Bebas+Neue&family=Caveat:wght@400..700&family=Codystar:wght@300;400&family=Comic+Relief:wght@400;700&family=Coral+Pixels&family=Dancing+Script:wght@400..700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Freehand&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Dives+Akuru&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Orbitron:wght@400..900&family=Poetsen+One&family=Share+Tech&family=Tagesschrift&family=Underdog&display=swap"
         rel="stylesheet">
     <style>
-       
         html,
         body {
             height: 100%;
             margin: 0;
-            overflow: hidden;
+            overflow-x: hidden;
             font-family: 'Inter', system-ui, sans-serif;
-        }
-        
-        .splash-screen,
-        .main-content {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            transition: opacity 1s ease;
-        }
-
-        .splash-screen {
-            background-color: black;
-            z-index: 10;
-        }
-
-        .splash-screen.fade-out {
-            opacity: 0;
-            pointer-events: none;
-        }
-
-        .main-content {
-            display: none;
-            background-color: white;
-            flex-direction: column;
-            text-align: center;
-        }
-
-        .main-content h1 {
-            font-size: 3rem;
-            color: #000;
-        }
-
-        .box {
-            transform-style: preserve-3d;
-            animation: animate 5s ease-in-out 5 alternate;
-        }
-
-        .box span {
-            background: linear-gradient(90deg, black, rgba(0, 0, 0, 0.5) 90%, transparent);
-            text-transform: uppercase;
-            line-height: 0.76em;
-            position: absolute;
-            color: #fff;
-            font-size: 3.5em;
-            white-space: nowrap;
-            font-weight: bold;
-            padding: 0 10px;
-            transform-style: preserve-3d;
-            text-shadow: 0 10px 15px black;
-            transform: translate(-50%, -50%) rotateX(calc(var(--i) * 22.5deg)) translateZ(109px);
-        }
-
-        .box span i:nth-child(1) {
-            color: #0008ff;
-        }
-
-        .box span i:nth-child(2) {
-            color: #fff701;
-        }
-
-        @keyframes animate {
-            0% {
-                transform: perspective(500px) rotateX(0deg) rotate(5deg);
-            }
-
-            100% {
-                transform: perspective(50px) rotateX(360deg) rotate(5deg);
-            }
-        }
-
-        .skip-btn {
-            position: absolute;
-            bottom: 20px;
-            right: 30px;
-            padding: 8px 16px;
-            background: #ffffff10;
-            border: 1px solid #fff;
-            color: #fff;
-            cursor: pointer;
-            font-size: 1rem;
-            border-radius: 4px;
-            transition: background 0.3s ease;
-            z-index: 100;
-        }
-
-        .skip-btn:hover {
-            background: #ffffff30;
         }
 
         .Delancey-home-page {
@@ -1013,30 +920,7 @@
 </head>
 
 <body>
-     <div class="splash-screen" id="splash">
-        <div class="box">
-            <!-- 16 Rotating Spans -->
-            <span style="--i: 1"><i>DELANCEY</i><i>TECHNOLOGIES</i></span>
-            <span style="--i: 2"><i>DELANCEY</i><i>TECHNOLOGIES</i></span>
-            <span style="--i: 3"><i>DELANCEY</i><i>TECHNOLOGIES</i></span>
-            <span style="--i: 4"><i>DELANCEY</i><i>TECHNOLOGIES</i></span>
-            <span style="--i: 5"><i>DELANCEY</i><i>TECHNOLOGIES</i></span>
-            <span style="--i: 6"><i>DELANCEY</i><i>TECHNOLOGIES</i></span>
-            <span style="--i: 7"><i>DELANCEY</i><i>TECHNOLOGIES</i></span>
-            <span style="--i: 8"><i>DELANCEY</i><i>TECHNOLOGIES</i></span>
-            <span style="--i: 9"><i>DELANCEY</i><i>TECHNOLOGIES</i></span>
-            <span style="--i: 10"><i>DELANCEY</i><i>TECHNOLOGIES</i></span>
-            <span style="--i: 11"><i>DELANCEY</i><i>TECHNOLOGIES</i></span>
-            <span style="--i: 12"><i>DELANCEY</i><i>TECHNOLOGIES</i></span>
-            <span style="--i: 13"><i>DELANCEY</i><i>TECHNOLOGIES</i></span>
-            <span style="--i: 14"><i>DELANCEY</i><i>TECHNOLOGIES</i></span>
-            <span style="--i: 15"><i>DELANCEY</i><i>TECHNOLOGIES</i></span>
-            <span style="--i: 16"><i>DELANCEY</i><i>TECHNOLOGIES</i></span>
-        </div>
-        <button class="skip-btn" onclick="skipSplash()">Skip</button>
-    </div>
-
-    <div class="scroll-wrapper" id="main">
+    <div class="scroll-wrapper">
         <div class="navbar-container" id="navbar-container">
             <div class="header-container" id="header-container"></div>
         <div class="Delancey-home-page">
@@ -1307,33 +1191,14 @@
        
     </div>
 
-   <script>
-            fetch("nav2.html")
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById("header-container").innerHTML = data;
-                })
-                .catch(error => console.error("Error loading header:", error));
-
-            function hideSplash() {
-                const splash = document.getElementById('splash');
-                const main = document.getElementById('main');
-
-                splash.classList.add('fade-out');
-                setTimeout(() => {
-                    splash.style.display = 'none';
-                    main.style.display = 'flex';
-                }, 1000); // Wait for fade-out to complete
-            }
-
-            function skipSplash() {
-                clearTimeout(splashTimer);
-                hideSplash();
-            }
-
-            const splashTimer = setTimeout(hideSplash, 9000);
-
-        </script>
+    <script>
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header-container").innerHTML = data;
+            })
+            .catch(error => console.error("Error loading header:", error));
+            </script>
 </body>
 
 </html>

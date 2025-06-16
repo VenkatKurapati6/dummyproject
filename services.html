@@ -1,82 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delancey Tech</title>
-    <link rel="stylesheet" href="styles.css">
-   
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services@Delancey</title>
+  <link rel="stylesheet" href="header.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Agu+Display&family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&family=Ancizar+Sans:ital,wght@1,100..1000&family=Bebas+Neue&family=Caveat:wght@400..700&family=Codystar:wght@300;400&family=Comic+Relief:wght@400;700&family=Coral+Pixels&family=Dancing+Script:wght@400..700&family=Darumadrop+One&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Freehand&family=Luckiest+Guy&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Dives+Akuru&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Orbitron:wght@400..900&family=Oswald:wght@200..700&family=Poetsen+One&family=Press+Start+2P&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sawarabi+Mincho&family=Share+Tech&family=Sofadi+One&family=Tagesschrift&family=Underdog&family=WDXL+Lubrifont+TC&display=swap"
+    rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-<body>
-    <div id="header-container"></div>
+    html,
+    body {
+      height: 100%;
+      width: 100%;
+      overflow-x: hidden;
+    }
 
-<script>
-    // Load the header dynamically
-    fetch("header.html")
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById("header-container").innerHTML = data;
-        })
-        .catch(error => console.error("Error loading header:", error));
-</script>
+    .section-label {
+      color: #FFFFFF;
+      position: absolute;
+      top: 40px;
+      left: 40px;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 5px 10px;
+      border-radius: 5px;
+      display: inline-block;
+      z-index: 2;
+    }
 
+    .section1 {
+      position: relative;
+      height: 100vh;
+      width: 100vw;
+      overflow: hidden;
+    }
 
-    <div class="services-container">
-        <section id="services" class="section">
-            <h2>Our Services</h2>
-            <p>The cost of design, manufacture, and testing of modern-day VLSI chips forces companies to innovate and create
-                better designs that offer a competitive edge.</p>
+    .services-background-landing-page-image {
+      position: relative;
+      height: 100vh;
+      width: 100vw;
+      overflow: hidden;
+    }
 
-            <h3>Front-End Design</h3>
-            <ul>
-                <li>Digital Design</li>
-                <li>ASIC Design Services</li>
-                <li>Micro Architecture</li>
-                <li>RTL Development</li>
-                <li>Low Power Design Implementation and Checks</li>
-                <li>Bus Protocols like AMBA AXI, AHB, APB</li>
-                <li>SoC/Sub-system Integration</li>
-            </ul>
+    .load-page-image {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
 
-            <h3>FPGA Design Services</h3>
-            <ul>
-                <li>FPGA System Architecture</li>
-                <li>Software-Hardware Partitioning</li>
-                <li>Custom IPs and HDL Development</li>
-                <li>Design Synthesis and Timing Closure</li>
-            </ul>
+    }
 
-            <h3>Digital Verification</h3>
-            <ul>
-                <li>Advanced IP & SoC Verification</li>
-                <li>SV-UVM Based Constrained-Random Verification</li>
-                <li>Low Power Verification – UPF/CPF</li>
-                <li>Gate Level Simulation</li>
-            </ul>
+    .overlay {
+      background-color: black;
+      opacity: .4;
+      position: absolute;
+      inset: 0%;
+    }
 
-            <h3>DFT Services</h3>
-            <ul>
-                <li>DFT Planning, Architecture, and Implementation</li>
-                <li>Test Pin-Muxing, SCAN Insertion, LBIST & MBIST</li>
-                <li>ATPG and Verification</li>
-                <li>DFT Simulations</li>
-            </ul>
+    .heading-main {
+      position: absolute;
+      top: 15%;
+      left: 5%;
+      color: #ffffff;
+      z-index: 2;
+      width: 90%;
+    }
 
-            <h3>Embedded Systems</h3>
-            <ul>
-                <li>Embedded solutions with advanced ARM cores</li>
-                <li>Linux Kernel & RTOS Development</li>
-                <li>Device Driver and Firmware Development</li>
-                <li>Porting Middleware for 64-bit Processors</li>
-            </ul>
-        </section>
-    </div>
+    .heading-main h1 {
+      font-size: 10vw;
+      line-height: 1;
+      font-weight: 600;
+      font-family: "WDXL Lubrifont TC", sans-serif, system-ui;
+    }
 
-    <footer>
-        <p>&copy; 2025 Delancey Tec. All rights reserved.</p>
-    </footer>
-</body>
+    .heading-main h3 {
+      font-family: Darumadrop One, sans-serif, system-ui;
+      font-size: 6vw;
+      line-height: 1.2;
+    }
 
-</html>
+    .heading-main p {
+      font-family: "Tagesschrift", system-ui;
+      text-align: center;
+      padding: 4% 20%;
+      font-size: 3vw;
+      color: #ffffff;
+    }

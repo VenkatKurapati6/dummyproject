@@ -799,3 +799,99 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 30px;
       }
+
+      .faq-item {
+        padding-left: 20px;
+      }
+
+      .faq-item h3 {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+
+      .faq-item p {
+        font-size: 14px;
+      }
+
+      .section5 {
+        padding: 60px 5%;
+      }
+
+      .section5 h1 {
+        font-size: 2.2rem;
+      }
+
+      .explore-buttons .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="section-main">
+    <div id="navbar-container"></div>
+    <div class="section1">
+      <div class="section-label">Services @ Delancey</div>
+      <div class="services-background-landing-page-image ">
+        <img src="/images/services-homepage3.avif" class="load-page-image " alt="image of vlsi">
+        <div class="overlay "></div>
+      </div>
+      <div class="heading-main">
+        <h1>Delancey Services</h1>
+        <h3>unleashed. No Limits</h3>
+        <p>- We tackle the toughest chip challenges—RTL, FPGA, verification, and more. Fast, fearless, and always a step
+          ahead. Let’s make your silicon dreams real.</p>
+      </div>
+    </div>
+    <div class="section2">
+      <div class="services-show-cards">
+        <div class="heading-top">
+          <h2>VLSI design, zero stress</h2>
+          <p>VLSI is tough. We make it look easy. From Napkin sketch to Silicon, we handle the heavy lifting—so you can
+            focus on what’s next. Explore our bold, no-drama services below.</p>
+        </div>
+        <div class="services-info">
+          <div class="tabs">
+            <button class="tab active" data-target="digital">Digital design - FGPA | ASIC</button>
+            <button class="tab" data-target="dv">Digital Verification - ASIC | SOC</button>
+            <button class="tab" data-target="gls"> GLS and PAGLS</button>
+            <button class="tab" data-target="dft">DFT Services</button>
+            <button class="tab" data-target="software">Software Services</button>
+          </div>
+
+          <div id="digital" class="content-section active">
+            <div class="card">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15%" height="15%" viewBox="5 0 24 24" fill="none">
+                <path
+                  d="M12.5 18.25C16.2279 18.25 19.25 15.2279 19.25 11.5C19.25 7.77208 16.2279 4.75 12.5 4.75C8.77208 4.75 5.75 7.77208 5.75 11.5C5.75 12.6007 6.01345 13.6398 6.48072 14.5578L5 19L9.71819 17.6519C10.5664 18.0361 11.5082 18.25 12.5 18.25Z"
+                  stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></path>
+              </svg>
+              <h2>RTL minus the mess</h2>
+              <p>We turn specs into clean, power-smart RTL. ASIC or FPGA No spaghetti—just silicon-ready results.</p>
+              <a href="#">Details →</a>
+            </div>
+            <div class="card">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15%" height="15%" viewBox="5 0 24 24" fill="none">
+                <path
+                  d="M4 12C8.41828 12 12 8.41828 12 4C12 8.41828 15.5817 12 20 12C15.5817 12 12 15.5817 12 20C12 15.5817 8.41828 12 4 12Z"
+                  stroke-width="1.5" stroke-linejoin="round" stroke="currentColor"></path>
+              </svg>
+              <h2>Low-power, big punch</h2>
+              <p>AXI to USB, PCIe to DDR—we make it all behave. Timing closed, bugs ghosted, power trimmed.</p>
+              <a href="#">Explore →</a>
+            </div>
+            <div class="card">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15%" height="15%" viewBox="5 0 24 24" fill="none">
+                <path
+                  d="M19.25 12C19.25 16.0041 16.0041 19.25 12 19.25C7.99594 19.25 4.75 16.0041 4.75 12C4.75 7.99594 7.99594 4.75 12 4.75C16.0041 4.75 19.25 7.99594 19.25 12Z"
+                  stroke="currentColor" stroke-width="1.5"></path>
+                <path d="M9 12L11 14L15.5 9.5" stroke="currentColor" stroke-width="1.5">
+                </path>
+              </svg>
+              <h2>Integration, no drama</h2>
+              <p>Custom IPs. Vendor blocks. Smooth bring-up. Boards boot, software runs, everyone’s happy.</p>
+              <a href="#">More →</a>
+            </div>
+          </div>

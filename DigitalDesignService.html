@@ -268,7 +268,6 @@
             box-shadow: 0 40px 150px rgba(0, 0, 0, 0.08);
             overflow: hidden;
             display: flex;
-            flex-direction: column;
             height: 450px;
         }
 
@@ -313,6 +312,12 @@
         }
 
         @media screen and (max-width: 1024px) {
+
+            .section-label{
+                text-align: center;
+                top:140px;
+                left:40px;
+            }
             .custom-grid5 {
                 grid-template-columns: repeat(2, 1fr);
             }
@@ -324,6 +329,7 @@
             .designflow-section h2 {
                 font-size: 2.5rem;
             }
+            
 
         }
 
@@ -343,6 +349,9 @@
             .designflow-section h2 {
                 font-size: 1.1rem;
             }
+            .reverse{
+                flex-direction: column-reverse;
+            }
         }
 
         @media (max-width: 768px) {
@@ -353,6 +362,7 @@
             }
 
             .load-page-content h1 {
+            margin: 50% 0 0 0;
                 font-size: 2.5rem;
             }
 
@@ -381,6 +391,9 @@
                 flex-direction: column;
             }
 
+            .reverse{
+                flex-direction: column-reverse;
+            }
             .card img {
                 height: auto;
             }
@@ -481,7 +494,7 @@
             <h2>DELANCEY Build ASICs That Just Work—Beautifully</h2>
 
             <div class="custom-grid1 ">
-                <div class="card large card1 c1 ">
+                <div class="card large card1 c1 reverse">
                     <div class="text-content">
                         <span class="icon">💭</span>
                         <h3>Architecture to Microarchitecture: The Brainstorm to Blueprint</h3>
@@ -538,7 +551,7 @@
             </div>
 
             <div class="custom-grid3">
-                <div class="card large card1 c5">
+                <div class="card large card1 c5 reverse">
                     <div class="text-content">
                         <span class="icon">&#128030;</span>
                         <h3>Linting & CDC That Catches the Sneaky Stuff</h3>
@@ -610,7 +623,7 @@
                     </div>
                 </div>
 
-                <div class="card ">
+                <div class="card reverse">
 
                     <div class="text-content">
                         <span class="icon">👤</span>
@@ -635,7 +648,7 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card reverse">
 
                     <div class="text-content">
                         <span class="icon">&#128076;</span>

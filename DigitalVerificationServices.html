@@ -1009,3 +1009,100 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="feature-card card-blue">
+                    <div class="feature-card-inner">
+                        <div class="feature-card-front">
+                            <div class="card-icon"><i class="fas fa-balance-scale"></i></div>
+                            <h3 class="card-title">Same Same (But Documented)</h3>
+                            <p class="card-text">Using equivalent products? We document similarities and differences to
+                                keep
+                                validation accurate.</p>
+                        </div>
+                        <div class="feature-card-back">
+                            <h3 class="back-title">Equivalent Products? Prove It.</h3>
+                            <ul class="feature-list">
+                                <li>Show the match to original.</li>
+                                <li>Log the differences.</li>
+                                <li>Keep validation transparent.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <footer>
+                <p>&copy; 2025 Delancey Tec. All rights reserved.</p>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar-container").innerHTML = data;
+            })
+            .catch(error => console.error("Error loading header:", error));
+        // Animate heading
+        const headingTarget = document.getElementById("headingAnimate");
+        const headingObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                }
+            });
+        }, { threshold: 0.2 });
+        headingObserver.observe(headingTarget);
+
+        // Utility to observe video on 80% visibility
+        function observeVideo(videoId, wrapperId, sectionSelector) {
+            const video = document.getElementById(videoId);
+            const wrapper = document.getElementById(wrapperId);
+            const section = document.querySelector(sectionSelector);
+            let playedOnce = false;
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    // Check if 80% of the section is visible
+                    if (entry.isIntersecting && entry.intersectionRatio >= 0.5 && !playedOnce) {
+                        wrapper.style.opacity = 1;
+                        video.currentTime = 0;
+                        video.play();
+                        playedOnce = true;
+
+                        // Pause after 4 seconds
+                        setTimeout(() => {
+                            video.pause();
+                        }, 4000);
+                    }
+                });
+            }, { threshold: buildThresholdList(0.01) }); // Fine-grained
+
+            observer.observe(section);
+        }
+
+        // Create detailed threshold list for smoother ratio detection
+        function buildThresholdList(step = 0.05) {
+            const thresholds = [];
+            for (let i = 0; i <= 1.0; i += step) {
+                thresholds.push(i);
+            }
+            return thresholds;
+        }
+
+        observeVideo("video3", "videoWrapper3", ".section3");
+        observeVideo("video5", "videoWrapper5", ".section5");
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.feature-card');
+            cards.forEach((card, i) => {
+                card.style.animationDelay = `${i * 0.1}s`;
+            });
+        });
+    </script>
+</body>
+
+</html>

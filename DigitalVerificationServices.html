@@ -498,9 +498,7 @@
             padding: 20px;
             font-size: 0.8rem;
         }
-
-
-        @media (max-width :1024px) {
+  @media (max-width :1024px) {
             .heading-main {
                 margin: 5px;
             }
@@ -514,6 +512,9 @@
                 margin-right: 7%;
             }
 
+            .section2{
+                height: auto;
+            }
             .section3 {
                 margin: 5%;
             }
@@ -525,6 +526,7 @@
             }
 
             .section3 p {
+                bottom: 5%;
                 left: 55%;
             }
 
@@ -533,9 +535,13 @@
             }
 
             .section5 h1 {
-                padding-top: 10rem;
+                padding-top: 2rem;
                 font-size: 8.5rem;
                 line-height: 1.5;
+            }
+            .video-wrapper{
+                top: -10%;
+                width: 200px;
             }
 
 
@@ -567,6 +573,9 @@
                 font-size: 20px;
                 margin-right: 5%;
             }
+            .section2{
+                height: auto;
+            }
 
             .section3 h1 {
                 font-size: 7rem;
@@ -574,13 +583,14 @@
             }
 
             .section3 p {
-                top: 75%;
+                bottom: 5%;
                 left: 55%;
             }
 
             .video-wrapper {
                 top: 3%;
                 right: 10%;
+                width: 200px;
             }
 
 
@@ -590,12 +600,13 @@
             }
 
             .section5 h1 {
+                padding-top: 10rem;
                 font-size: 7rem;
                 line-height: 1.5;
             }
 
             .section5 p {
-                top: 85%;
+                bottom:5%;
                 left: 55%;
             }
 
@@ -638,6 +649,9 @@
                 margin: 10px;
             }
 
+            .section2{
+                height: auto;
+            }
             .content-about-delancey h3 {
                 font-size: 4rem;
             }
@@ -651,12 +665,12 @@
             }
 
             .section3 h1 {
-                padding-top: 25rem;
-                font-size: 3.75rem;
+                padding-top: 15rem;
+                font-size: 5rem;
             }
 
             .section3 p {
-                top: 70%;
+                bottom:5%;
                 left: 35%;
                 font-size: 2rem;
             }
@@ -671,24 +685,25 @@
             }
 
             .section5 h1 {
-                padding-top: 25rem;
+                padding-top: 20rem;
                 font-size: 4.5rem;
             }
 
             .section5 p {
-                top: 75%;
+                bottom: 5%;
                 left: 35%;
                 font-size: 2rem;
             }
 
             .video-wrapper {
-                top: 0%;
-                right: 40%;
+                top: 10%;
+                right: 30%;
+                width: 150px;
 
             }
 
             .video-wrapper-section5 {
-                top: 0%;
+                top: -10%;
                 right: 40%;
                 width: 300px;
 
@@ -736,19 +751,87 @@
             }
 
             .section3 h1 {
-                padding-top: 25rem;
+                padding-top: 20rem;
                 font-size: 3.25rem;
             }
 
+            .video-wrapper{
+                top: 5%;
+                right:40%;
+                width: 200px;
+            }
             .section3 p {
-                top: 80%;
+                top: 90%;
                 left: 35%;
                 font-size: 2rem;
             }
 
             .section5 h1 {
-                padding-top: 25rem;
+                padding-top: 20rem;
                 font-size: 3.75rem;
+            }
+
+            .section5 p {
+                bottom: 5%;
+                left: 35%;
+                font-size: 2rem;
+            }
+
+        }
+        @media (max-width :350px) {
+            .section-label{
+                top:20%;
+                padding-left: 30px;
+            }
+            .heading-main {
+                margin: 10px;
+            }
+
+            .heading-main h1 {
+                font-size: 2rem;
+            }
+
+            .heading-main p {
+                font-size: 20px;
+                margin: 0 2% 0 3%;
+            }
+
+            .about-container {
+                flex-direction: column;
+                margin: 10px;
+            }
+
+            .content-about-delancey h3 {
+                font-size: 3rem;
+            }
+
+            .content-about-delancey p {
+                font-size: 1rem;
+            }
+
+            .about-container img {
+                height: auto;
+                width: 100%;
+            }
+
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section3 h1 {
+                padding-top: 20rem;
+                font-size: 2.75rem;
+            }
+
+            .section3 p {
+                top: 85%;
+                left: 35%;
+                font-size: 1.5rem;
+            }
+
+            .section5 h1 {
+                padding-top: 20rem;
+                font-size: 2.75rem;
             }
 
             .section5 p {
@@ -756,7 +839,14 @@
                 left: 35%;
                 font-size: 2rem;
             }
+            .video-wrapper-section5{
+                top:8%;
+                width: 200px;
+            }
 
+            .section6{
+                padding: 16px 24px;
+            }
         }
     </style>
 </head>

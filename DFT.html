@@ -144,3 +144,54 @@
             mix-blend-mode: multiply;
             opacity: 0.5;
         }
+
+        .circle-yellow {
+            top: -4rem;
+            right: -4rem;
+            background-color: #facc15;
+        }
+
+        .circle-pink {
+            bottom: -4rem;
+            left: -4rem;
+            background-color: #f472b6;
+        }
+
+        .hero-img-box {
+            position: relative;
+            animation: floating 5s ease-in-out infinite;
+        }
+
+        @keyframes floating {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-25px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .hero-img-box img {
+            border-radius: 1rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            border: 4px solid #fff;
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+        }
+
+
+        .section4 {
+            padding: 4rem 15rem;
+            background-color: #ffffff;
+        }
+
+        .cards-section {
+            max-width: 1200px;
+            margin: 0 auto;
+        }

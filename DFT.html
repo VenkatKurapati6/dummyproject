@@ -489,3 +489,115 @@
             transform: translateX(-50%);
             z-index: 1;
         }
+
+        @media (max-width: 768px) {
+            .container2::before {
+                display: none;
+            }
+
+            .process-row:nth-child(odd) {
+                flex-direction: column-reverse;
+            }
+
+            .process-row .left-column,
+            .process-row .right-column {
+                padding: 0;
+            }
+
+            .text-box,
+            .image-box {
+                max-width: 100%;
+                padding: 1.5rem;
+            }
+
+            .step-title {
+                font-size: 1.3rem;
+            }
+
+            .step-description {
+                font-size: 1rem;
+            }
+
+            .step-number {
+                width: 36px;
+                height: 36px;
+                line-height: 36px;
+                font-size: 1rem;
+            }
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dft-section-main">
+        <div id="navbar-container"></div>
+        <div class="section1">
+            <div class="section-label">DFT Services @ Delancey</div>
+            <section class="hero-section">
+                <div class="container">
+                    <div class="hero-content">
+                        <div class="hero-text">
+                            <h1><span>Delancey</span> provides expert <span>DFT Services</span> for ASIC Success</h1>
+                            <p>Our expert management keeps projects on track with military-grade checklists, ninja-level
+                                methodology, and review cycles so precise you'd think we had tiny engineers living on
+                                your chip—cones, signs, and all. Because in our world, even testability gets a hard hat.
+                            </p>
+                            <div class="hero-buttons">
+
+                                <a href="mailto:hr@delanceytec.com" class="btn-yellow">Get Started</a>
+                                <a href="mailto:hr@delanceytec.com" class="btn-outline">Learn More</a>
+
+                            </div>
+                        </div>
+                        <div class="hero-image">
+                            <div class="circle-yellow"></div>
+                            <div class="circle-pink"></div>
+                            <div class="hero-img-box">
+                                <img src="/images/DFT.jpg" alt="DFT visualization image" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+
+        <div class="section2">
+            <section class="container">
+                <h2 class="section-title">Why DFT Matters</h2>
+                <p class="section-subtitle">In today’s high-stakes silicon race, Design-for-Testability is your
+                    insurance policy. It minimizes costly failures, shortens development cycles, and ensures that your
+                    chips hit the market fast — and function flawlessly from day one.
+                </p>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-microchip"></i></div>
+                        <h3 class="service-title">Improved Yield</h3>
+                        <p class="service-description">At Delanceytech, we enhance fault coverage through rigorous DFT
+                            strategies &mdash; catching defects early and significantly boosting silicon yield during
+                            production.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-stopwatch"></i></div>
+                        <h3 class="service-title">Faster Debug</h3>
+                        <p class="service-description">Our advanced scan-based architectures are designed to speed up
+                            fault isolation and diagnosis, enabling faster validation and reducing debug time across the
+                            board.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-dollar-sign"></i> </div>
+                        <h3 class="service-title">Reduced Cost</h3>
+                        <p class="service-description">By identifying issues early in the design cycle, we help you
+                            avoid expensive re-spins and post-silicon surprises &mdash; saving both time and development
+                            cost.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>

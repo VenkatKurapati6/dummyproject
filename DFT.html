@@ -395,3 +395,97 @@
             font-weight: 400;
             margin-bottom: 1rem;
         }
+
+
+        .section3-subtitle {
+            font-family: "Orbitron", Arial, Helvetica, sans-serif;
+            text-align: center;
+            color: #000000;
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+        }
+
+        .process-row {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 3rem;
+            gap: 2.5rem;
+        }
+
+        .text-box,
+        .image-box {
+            padding: 2rem;
+            flex: 1;
+            min-width: 300px;
+            max-width: 48%;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+            position: relative;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .image-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .image-box img {
+            max-width: 100%;
+            padding: 0%;
+            border-radius: 12px;
+        }
+
+        .step-number {
+            font-family: "";
+            display: inline-block;
+            background-color: #000000;
+            color: #fff;
+            border-radius: 50%;
+            width: 44px;
+            height: 44px;
+            text-align: center;
+            line-height: 44px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-right: 0.75rem;
+        }
+
+        .step-title {
+            font-family: "Jacques Francois Shadow", Arial, Helvetica, sans-serif;
+            font-size: 2rem;
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .step-description {
+            font-family: "Orbitron", Arial, Helvetica, sans-serif;
+            color: #000000;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .section3-container {
+            position: relative;
+        }
+
+        .section3-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            width: 5px;
+            background-color: #3063f0;
+            transform: translateX(-50%);
+            z-index: 1;
+        }

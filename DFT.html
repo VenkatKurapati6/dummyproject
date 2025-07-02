@@ -195,3 +195,68 @@
             max-width: 1200px;
             margin: 0 auto;
         }
+
+
+        .cards-section h1 {
+            font-family: "Press Start 2P";
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            animation: floating 5s ease-in-out infinite;
+        }
+
+        .card {
+            position: sticky;
+            top: 13rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #fff;
+            border-radius: 1rem;
+            margin-bottom: 3rem;
+            padding: 2rem;
+            gap: 2rem;
+        }
+
+        .card-content {
+            flex: 1;
+        }
+
+        .card-content h3 {
+            font-family: "Tilt Prism";
+            font-weight: 400;
+            font-size: 3rem;
+            color: #1d4ed8;
+            margin: 0;
+        }
+
+        .card-content p {
+            font-family: "Sofadi One";
+            font-size: 1rem;
+            color: #000000;
+            margin: 0;
+        }
+
+        .card-image {
+            flex: 1;
+        }
+
+        .card-image img {
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .card:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .padding-section {
+            padding-bottom: 100px;
+        }
+
+        @media (max-width:900px) {
+            .section4 {
+                padding: 4rem;
+            }
+
+        }

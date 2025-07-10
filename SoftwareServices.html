@@ -516,3 +516,104 @@
             .card-header h4 {
                 font-size: 16px;
             }
+
+            .card-header img.icon {
+                width: 28px;
+                height: 28px;
+            }
+
+            .arrow {
+                font-size: 18px;
+            }
+
+            .card-content {
+                padding: 0 12px;
+            }
+
+            .card.active .card-content {
+                padding: 12px 12px 16px;
+            }
+
+            .columns {
+                flex-direction: column;
+            }
+
+            .column {
+                margin-bottom: 40px;
+            }
+
+            .content-box {
+                width: 90%;
+                padding: 60px 30px;
+            }
+
+            .content-box h1 {
+                font-size: 36px;
+                text-align: center;
+            }
+
+            .column h3,
+            .column p {
+                text-align: center;
+            }
+
+            .section,
+            .section2 {
+                padding: 40px 0 30px 0;
+            }
+
+            .section .demos,
+            .section2 .demos {
+                gap: 100px;
+            }
+
+            .section2 .demos .img1,
+            .section .demos .img1 {
+                position: absolute;
+                height: 180px;
+                width: 120px;
+                z-index: 2;
+                top: 45%;
+            }
+
+            .section .demos,
+            .section2 .demos {
+                margin-top: 0px;
+            }
+
+            .badge {
+                top: 220px;
+                right: 20px;
+                width: 90px;
+                height: 90px;
+                font-size: 14px;
+                padding: 15px;
+            }
+        }
+
+
+        @media (max-width: 480px) {
+            .card-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+            }
+
+            .arrow {
+                align-self: flex-end;
+            }
+        }
+
+        @media (max-width:715px) {
+
+            .badge {
+                top: 320px;
+            }
+        }
+
+        @media (max-width:486px) {
+            .rotating-img {
+                width: 190%;
+                right: -50%;
+            }
+        }

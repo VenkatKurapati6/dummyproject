@@ -828,3 +828,200 @@
                     </ul>
                 </div>
             </div>
+
+            <div class="card" id="BTC">
+                <div class="card-header">
+                    <h4>
+                        <img  loading="lazy" src="/images/btc.png" class="icon" alt="">
+                        Business & Technology Consulting
+                    </h4>
+                    <span class="arrow">&#11163;</span>
+                </div>
+                <div class="card-content">
+                    <p>In today’s tech jungle, every decision counts. From strategy to execution, we help you stay
+                        sharp,
+                        modern, and always a few steps ahead. Think of us as your digital compass with a nerdy MBA.</p>
+                    <h4>Why Delancey Rocks:</h4>
+                    <ul>
+                        <li>We don’t just consult — we co-pilot your digital journey</li>
+                        <li>Business goals + tech smarts = smart moves, faster</li>
+                        <li>Balance innovation with execution like a boss</li>
+                        <li>Strategy, infrastructure, services — all in sync, no guesswork</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card" id="CI">
+                <div class="card-header">
+                    <h4>
+                        <img loading="lazy" src="/images/ci.png" class="icon" alt="">
+                        Cloud & Infrastructure
+                    </h4>
+                    <span class="arrow">&#11163;</span>
+                </div>
+                <div class="card-content">
+                    <p>Tech complexity? We eat that for breakfast. Our cloud and infrastructure pros simplify your IT
+                        world
+                        so you can zero in on what actually matters — growing your business.</p>
+                    <h4>Why Delancey Rocks:</h4>
+                    <ul>
+                        <li>Scale smarter with cloud solutions built for agility</li>
+                        <li>Modernize without the migraines — we handle the heavy lifting</li>
+                        <li>Security, reliability, and speed baked into every layer</li>
+                        <li>You focus on business, we’ll handle the tech jungle</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card" id="CS">
+                <div class="card-header">
+                    <h4>
+                        <img loading="lazy" src="/images/cs.png" class="icon" alt="">
+                        Cybersecurity
+                    </h4>
+                    <span class="arrow">&#11163;</span>
+                </div>
+                <div class="card-content">
+                    <p>In a world where every click could be a threat, cybersecurity isn’t optional — it’s critical. We
+                        help
+                        you stay ahead of evolving risks, close talent gaps, and lock down your digital assets like a
+                        pro.
+                    </p>
+                    <h4>Why Delancey Rocks:</h4>
+                    <ul>
+                        <li>Proactive defense that evolves with the threat landscape</li>
+                        <li>MSSP-powered support = 24/7 vigilance without the overhead</li>
+                        <li>Boost visibility, cut response time, and outsmart the bad guys</li>
+                        <li>We don’t just protect — we future-proof your organization</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card" id="DAA">
+                <div class="card-header">
+                    <h4>
+                        <img loading="lazy" src="/images/daa.png" class="icon" alt="">
+                        Data, AI & Analytics
+                    </h4>
+                    <span class="arrow">&#11163;</span>
+                </div>
+                <div class="card-content">
+                    <p>The future belongs to those who decode it. We help you turn raw data into real-time answers,
+                        smarter
+                        decisions, and business moves that actually move the needle.</p>
+                    <h4>Why Delancey Rocks:</h4>
+                    <ul>
+                        <li>We turn data into action — not just dashboards</li>
+                        <li>AI, ML, automation — we make it work, not just sound cool</li>
+                        <li>Speedy dev with API & integration firepower</li>
+                        <li>Your business insights + our tech brain = future-ready solutions</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card" id="DE">
+                <div class="card-header">
+                    <h4>
+                        <img loading="lazy" src="/images/de.png" class="icon" alt="">
+                        Digital Experience
+                    </h4>
+                    <span class="arrow">&#11163;</span>
+                </div>
+                <div class="card-content">
+                    <p>Digital moves fast — and so do we. Whether you're a business, organization, or public entity, we
+                        help
+                        you stay ahead by designing experiences your users actually want. Think frictionless journeys,
+                        smarter ecosystems, and business models ready for tomorrow.</p>
+                    <h4>Why Delancey Rocks:</h4>
+                    <ul>
+                        <li>We build digital experiences that feel like magic (but run on serious tech)</li>
+                        <li>From customer to employee journeys — we cover it all</li>
+                        <li>Local talent + global reach = innovation that scales</li>
+                        <li>We solve the complex stuff, so you can move faster and smarter</li>
+                        <li>Your users expect agility — and we deliver nothing less</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card" id="SRD">
+                <div class="card-header">
+                    <h4>
+                        <img loading="lazy" src="/images/srd.png" class="icon" alt="">
+                        Software R&D Services
+                    </h4>
+                    <span class="arrow">&#11163;</span>
+                </div>
+                <div class="card-content">
+                    <p>We power the tech behind today’s smartest devices. From embedded systems to wireless and cloud
+                        tech,
+                        we’re the go-to software R&D partner for industries like telecom, automotive, semiconductors,
+                        and
+                        high-tech.</p>
+                    <h4>Why Delancey Rocks:</h4>
+                    <ul>
+                        <li>We help global tech leaders build the future — from 5G to IoT</li>
+                        <li>Millions of people use our code daily (including drivers in tens of millions of cars)</li>
+                        <li>From early concept to full-on R&D outsourcing — we’ve got your back</li>
+                        <li>Embedded, wireless, cloud — we speak your tech language</li>
+                        <li>We turn bold ideas into reliable, scalable software products</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="section5">
+            <div class="rotating-wrapper">
+                <img loading="lazy" src="/images/rotation-image.webp" alt="Rotating image" class="rotating-img">
+            </div>
+        </div>
+    </div>
+    <script>
+
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar-container").innerHTML = data;
+            })
+            .catch(error => console.error("Error loading header:", error));
+        const cards = document.querySelectorAll('.card');
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const cards = document.querySelectorAll('.card');
+
+            // Toggle cards manually on header click (optional)
+            cards.forEach(card => {
+                const header = card.querySelector('.card-header');
+                if (header) {
+                    header.addEventListener('click', () => {
+                        card.classList.toggle('active');
+                    });
+                }
+            });
+
+            const arrows = document.querySelectorAll('.arrow[data-target]');
+            arrows.forEach(arrow => {
+                arrow.addEventListener('click', (e) => {
+                    e.preventDefault();
+
+                    const targetId = arrow.getAttribute('data-target');
+                    const targetCard = document.getElementById(targetId);
+                    if (!targetCard) return;
+
+                    cards.forEach(card => card.classList.remove('active'));
+
+                    void targetCard.offsetWidth;
+                    targetCard.classList.add('active');
+
+                    setTimeout(() => {
+                        const rect = targetCard.getBoundingClientRect();
+                        const offset = -200; 
+                        window.scrollTo({
+                            top: window.scrollY + rect.top + offset,
+                            behavior: 'smooth'
+                        });
+                    }, 600);
+                });
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>

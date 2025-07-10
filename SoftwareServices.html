@@ -401,3 +401,118 @@
             height: 50vh;
             overflow: hidden;
         }
+
+        .rotating-wrapper {
+            position: relative;
+            width: 250px;
+            height: 250px;
+        }
+
+        .rotating-img {
+            position: absolute;
+            top: 20%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            object-fit: contain;
+            transform: translate(-50%, -50%);
+            overflow: hidden;
+        }
+
+
+        .rotating-img {
+            animation: spin 6s linear infinite;
+            z-index: 2;
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @media (max-width:1999px) {
+            .section5 {
+                height: 30vh;
+            }
+
+        }
+
+        @media (max-width:1300px) {
+            .section5 {
+                height: 50vh;
+            }
+
+        }
+
+        @media (max-width:1260px) {
+
+            .section .demos,
+            .section2 .demos {
+                gap: 70px;
+            }
+
+        }
+
+        @media (max-width:1240px) {
+            .section5 {
+                height: 30vh;
+            }
+
+            .section .demos,
+            .section2 .demos {
+                gap: 40px;
+            }
+
+            .section,
+            .section2 {
+                flex: 1 1 48%;
+            }
+
+            .sections {
+                clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
+            }
+
+            .sections1 {
+                clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+            }
+
+            .content-box {
+                padding: 30px 30px 30px 200px;
+            }
+        }
+
+        @media (max-width:940px) {
+
+            .section,
+            .section2 {
+                width: 48%;
+            }
+
+            .sections,
+            .sections1 {
+                clip-path: none;
+            }
+
+            .badge {
+                top: 200px;
+                right: 100px;
+            }
+
+            .logo {
+                margin-top: 5%;
+            }
+
+            .content-box {
+                padding: 30px 30px 30px 60px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .card-header h4 {
+                font-size: 16px;
+            }
